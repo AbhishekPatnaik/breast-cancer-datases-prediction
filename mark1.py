@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('/home/abhishek/Downloads/DAT210x-master/Module5/Datasets/breast-cancer-wisconsin.data')
+data = pd.read_csv('Datasets/breast-cancer-wisconsin.data')
 data.columns=['sample_id', 'thickness', 'size', 'shape', 'adhesion', 'epithelial', 'nuclei', 'chromatin', 'nucleoli', 'mitoses', 'status']
 data.head()
 data['sample_id'] = data['sample_id'].astype('category').cat.codes
